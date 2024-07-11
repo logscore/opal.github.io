@@ -1,0 +1,289 @@
+/* Base styles */
+:root {
+    --primary-color: #6e62e5;
+    --secondary-color: #f6f6f8;
+    --text-color: #333;
+    --background-color: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  /* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #f6f6f8;
+    padding: 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-logo {
+    font-size: 2.75rem;
+    margin-right: 12.5rem;
+    font-weight: bold;
+    color: #6e62e5;
+    text-decoration: none;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 2.5rem;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.github-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.github-logo {
+    width: 40px;
+    height: auto;
+    margin-top: 7px;
+}
+
+.cta-button {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.cta-button:last-child {
+    margin-right: 0;
+}
+
+.cta-button-secondary {
+    border: 1px solid #6e62e5;
+    color: #6e62e5;
+}
+
+.cta-button-primary {
+    background-color: #6e62e5;
+    color: white;
+}
+
+/* Button styles */
+.cta-button-1, .cta-button-2 {
+padding: 0.5rem 1rem;
+border-radius: 4px;
+text-decoration: none;
+font-weight: 600;
+transition: background-color 0.3s ease;
+}
+
+.cta-button-1 {
+background-color: var(--primary-color);
+color: white;
+margin-left: 1rem;
+}
+
+.cta-button-2 {
+border: 1px solid var(--primary-color);
+color: var(--primary-color);
+}
+
+
+/* Main content styles */
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem 5%;
+}
+
+/* Hero section */
+.hero {
+text-align: center;
+padding: 4rem 0;
+}
+
+.hero h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+color: var(--primary-color);
+}
+
+.hero p {
+font-size: 1.25rem;
+margin-bottom: 2rem;
+}
+
+/* Features section */
+.features {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+margin-top: 4rem;
+}
+
+.feature {
+background-color: var(--secondary-color);
+padding: 2rem;
+border-radius: 8px;
+text-align: center;
+}
+
+.feature h2 {
+color: var(--primary-color);
+margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f6f6f8;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #6e62e5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #6e62e5;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.github-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.github-logo {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-buttons {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .cta-button {
+        margin-top: 0.5rem;
+    }
+}
