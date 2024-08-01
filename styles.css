@@ -15,11 +15,26 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+}
+
+/* Main content should grow to fill available space */
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
 }
 
 /* Header styles */
@@ -126,13 +141,6 @@ body {
 .cta-button-2 {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
-}
-
-/* Main content styles */
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 5%;
 }
 
 /* Hero section */
@@ -254,10 +262,7 @@ main {
     .footer-section {
         margin-bottom: 30px;
     }
-}
 
-/* Responsive design */
-@media (max-width: 768px) {
     .nav {
         flex-direction: column;
         align-items: flex-start;
